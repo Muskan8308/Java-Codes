@@ -8,6 +8,7 @@ import java.util.Arrays;
  		* Generic methods can be inside a generic class as well as non-generic class.
  		* Inside a generic class, there can be a generic method as well a non-generic method.  
  		* To call a generic method, we need to use reference type of datatype like Integer, Double, Boolean, etc. since generics can't work with primitive datatypes.   
+ 		* We can also use bounded and wildcard arguments here same as the generic class.
  */
 
 public class GenericMethod {
@@ -51,20 +52,20 @@ public class GenericMethod {
 	
 	// Generic method 
 	
-	private static <T> T[] sort(T[] arr)
+	private static <T extends Number> T[] sort(T[] arr)
 	{
 		Arrays.sort(arr);
 		return arr;
 	}
 
-	public static <T> T demo(T t)
+	public static <T> T demo(T t)	// we can also use bounded, wildcard parameters here also
 	{
 		return t;
 	}
 	
 	// method to check if object is in array or not
 	
-	private static <T, V> boolean check(T t, V[] arr)
+	private static <T, V> boolean check(T t, V[] arr)	
 	{
 		for(int i = 0; i < arr.length; i++)
 		{
