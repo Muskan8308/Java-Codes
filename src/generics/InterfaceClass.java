@@ -1,6 +1,12 @@
 package generics;
 
-//Connected to GenericInterface and Main2
+// Connected to GenericInterface and Main2
+
+/*
+ 		* Yeh GenericInterface<T> ka implementation hai ek class ke through.
+		* Iska matlab hai ki "InterfaceClass" ek generic class hai jo T type ko accept karegi, lekin wahi types jo Comparable<T> ko follow karte hain.
+		* "implements GenericInterface<T>" ka matlab hai ki yeh class GenericInterface<T> ko implement kar rahi hai aur uske rules follow karegi. 
+ */
 
 public class InterfaceClass<T extends Comparable<T>> implements GenericInterface<T>{
 	

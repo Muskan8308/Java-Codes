@@ -1,6 +1,6 @@
 package generics;
 
-// Connected to InterfaceClass and GenericInterface
+// Connected to InterfaceClass and GenericInterface and Generic
 
 public class Main2 {
 
