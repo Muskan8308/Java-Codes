@@ -19,7 +19,7 @@ public class varargs {
 	static String print(String... string)
 	{
 		System.out.println(Arrays.toString(string));
-		return "Hii" + String.join(", ", string);
+		return " Hii " + String.join(", ", string);
 	}
 
 	public static void main(String[] args) {
@@ -31,9 +31,9 @@ public class varargs {
 		int[] arr = new int[] {4,7,8,3,5};
 		System.out.println(add(arr));
 
-		System.out.println(print(" Muskan"));
-		System.out.println(print(" John","Ria","Madhav"));
-		System.out.println(print(" Man! How are you"));
+		System.out.println(print("Muskan"));
+		System.out.println(print("John","Ria","Madhav"));
+		System.out.println(print("Man! How are you"));
 
 	}
 
