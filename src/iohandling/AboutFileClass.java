@@ -16,7 +16,7 @@ public class AboutFileClass {
 
 	public static void main(String[] args) {
 
-		File f = new File("C:\\Users\\Hp\\OneDrive\\Documents\\SQL");		// If this path exists -> true
+		File f = new File(" /c/Users/Hp/git/Java-Codes/Java/src/iohandling/demo");		// If this path exists -> true
 		
 		boolean exist = f.exists();
 		System.out.println(exist);
@@ -26,8 +26,9 @@ public class AboutFileClass {
 		
 		boolean dir = f.isDirectory();
 		
-		if(!exist && !dir)
+		if(!exist && !dir) 
 		{
+			
 			boolean mkdir = f.mkdir();
 			if(!mkdir)
 			{
